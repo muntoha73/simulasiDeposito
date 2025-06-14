@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulasi Bagi Hasil Deposito</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: auto;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: royalblue;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+
+        .result-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulasi Bagi Hasil Deposito</h1>
+        <form id="depositForm">
+            <label for="amount">Jumlah Uang (Rp.)</label>
+            <input id="amount" type="text" placeholder="Jumlah Uang (Rp)" class="form-input angka" />
+
+            <label for="Eqr">Equivalent Rate (% p.a):</label>
+            <input id="Eqr" type="text" placeholder="Equivalent Rate (% p.a)" class="form-input" />
+
+            <label for="duration">Jangka Waktu (Bulan):</label>
+            <input id="duration" type="text" placeholder="Jangka Waktu (Bulan)" class="form-input" />
+
+            <button type="submit">Hitung</button>
+
+        </form>
+        <div id="result"></div>
